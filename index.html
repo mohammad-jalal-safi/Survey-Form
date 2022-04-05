@@ -12,14 +12,34 @@
 
     <h1 id="title">Survey Form</h1>
     <p id="description"><b>Hello Wolrd!</b></p>
-    <from id="survey-form">
+    <form id="survey-form">
       <label id="name-label">Name : </label>
-      <input type="text" id="name">
-      <label id="email-lable">Email : </label>
-      <input type="email" id="email" placeholder="Enter your email">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label id="email-label">Email : </label>
+      <input type="email" id="email" placeholder="Enter your email" required>
       <label id="number-label">Number : </label>
-      <input type="number" id="number" min="0" max="100">
+      <input type="number" id="number" min="0" max="100" placeholder="Enter your number">
+      <select id="dropdown" multiple>
+        <optgroup name="Swedish Cars" label="Swedish Cars">
+          <option value="volvo" selected>Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="saab1">Saab1</option>
+        </optgroup>
+        <optgroup name="German Cars" label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi" selected>Audi</option>
+          <option value="audi1" selected>Audi1</option>
+        </optgroup>
+      </select>
 
+      <input type="checkbox" value="Male">
+      <input type="checkbox" value="Female">
+
+      <textarea>
+
+      </textarea>
+
+      <input type="submit" id="submit" value="Submit">
     </from>
 
 
